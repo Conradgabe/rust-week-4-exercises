@@ -113,7 +113,6 @@ impl LegacyTransactionBuilder {
     }
 }
 
-
 // Transaction components
 #[derive(Debug, Clone)]
 pub struct TxInput {
@@ -194,3 +193,4 @@ impl BitcoinSerialize for LegacyTransaction {
         bytes
     }
 }
+
