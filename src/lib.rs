@@ -193,4 +193,3 @@ impl BitcoinSerialize for LegacyTransaction {
         bytes
     }
 }
-
