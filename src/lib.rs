@@ -113,6 +113,7 @@ impl LegacyTransactionBuilder {
     }
 }
 
+
 // Transaction components
 #[derive(Debug, Clone)]
 pub struct TxInput {
