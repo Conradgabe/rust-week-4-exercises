@@ -143,8 +143,8 @@ pub fn parse_cli_args(args: &[String]) -> Result<CliCommand, BitcoinError> {
                     "send requires <amount> <address>".to_string(),
                 ));
             }
-            let amount = u64::from_str(&args[1])
-                .map_err(|e| BitcoinError::ParseError(e.to_string()))?;
+            let amount =
+                u64::from_str(&args[1]).map_err(|e| BitcoinError::ParseError(e.to_string()))?;
             let address = args[2].clone();
             Ok(CliCommand::Send { amount, address })
         }
@@ -193,4 +193,3 @@ impl BitcoinSerialize for LegacyTransaction {
         bytes
     }
 }
-
